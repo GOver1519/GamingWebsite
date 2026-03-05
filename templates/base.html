@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Gaming website
+            {% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <a href="{{ url_for('index') }}" class="home-link">Home</a>
+            <input type="text" placeholder="Search games..." class="search-bar">
+        </div>
+    </nav>
+
+    <!-- Sidebar + Main -->
+    <div class="container">
+        
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <li><a href="{{ url_for('action') }}">Action</a></li>
+                <li><a href="{{ url_for('adventure') }}">Adventure</a></li>
+                <li><a href="{{ url_for('sports') }}">Sports</a></li>
+                <li><a href="{{ url_for('puzzle') }}">Puzzle</a></li>
+                <li><a href="{{ url_for('simulation') }}">Simulation</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            {% block content %}
+            {% endblock %}
+        </main>
+
+    </div>
+
+</body>
+</html>

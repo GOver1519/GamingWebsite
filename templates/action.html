@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm"> 
+                        <img src="{{ url_for('static', filename='images/god.jpg') }}" height="440px">
+                        <div class="card-body">
+                            <h2 class="card-text">God of War</h2>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group"> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Play game</button> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Rate game</button> </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm"> 
+                        <img src="{{ url_for('static', filename='images/elden.jpg') }}" height="400px">
+                        <div class="card-body">
+                            <h2 class="card-text">Elden Ring & Dark Souls Games</h2>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group"> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Play game</button> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Rate game</button> </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm"> 
+                        <img src="{{ url_for('static', filename='images/starWars.jpg') }}" height="440px">
+                        <div class="card-body">
+                            <h2 class="card-text">Star Wars Jedi</h2>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group"> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">View</button> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Edit</button> </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm"> 
+                        <img src="{{ url_for('static', filename='images/batman.jpg') }}" height="500px">
+                        <div class="card-body">
+                            <h2 class="card-text">Batman Arkham</h2>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group"> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Play game</button> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Rate game</button> </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm"> 
+                        <img src="{{ url_for('static', filename='images/ratchet.jpg') }}" height="460px">
+                        <div class="card-body">
+                            <h2 class="card-text">Ratchet & Clank: Rift Apart</h2>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group"> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Play game</button> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Rate game</button> </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm"> 
+                        <img src="{{ url_for('static', filename='images/sekiro.jpg') }}" height="460px">
+                        <div class="card-body">
+                            <h2 class="card-text">Sekiro: Shadows Die Twice</h2>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group"> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Play game</button> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">Rate game</button> </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
+    </div>
+{% endblock %}
